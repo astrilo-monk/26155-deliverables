@@ -113,12 +113,23 @@ body { overflow-x: hidden; }
   background-clip: text;
 }
 
-.hero__subtitle {
-  max-width: 680px;
+.hero__note {
+  display: inline-block;
+  max-width: 640px;
   margin: 0 auto 36px;
-  font-size: 1.05rem;
-  color: var(--text-muted);
-  line-height: 1.7;
+  font-size: .95rem;
+  color: var(--text);
+  line-height: 1.6;
+  background: var(--accent-dim);
+  border: 1px solid rgba(249, 115, 22, .3);
+  border-left: 3px solid var(--accent);
+  padding: 14px 22px;
+  border-radius: var(--radius-sm);
+  text-align: left;
+}
+
+.hero__note strong {
+  color: var(--accent);
 }
 
 .hero__actions {
